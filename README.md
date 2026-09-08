@@ -34,7 +34,6 @@ A desktop app for managing a large set of Gmail accounts from one window. Each a
 
 **Hand-off to other tools**
 - **Export sessions**: Google cookies of the ticked accounts for an external captcha solver.
-- **Ticketbox login**: uses the account's existing Google session to mint a Ticketbox mobile token and writes `login_sessions.json`, with no Google re-login. **Set PIN** sets the Ticketbox PIN you type, confirming the emailed OTP automatically.
 - **Forward**: sets up mail forwarding from many accounts to one destination account.
 
 **Housekeeping**
@@ -52,7 +51,7 @@ Keyboard: `/` search · `↑↓` move · `Enter` open · `L` auto login · `C` c
 
 ## Where your data lives
 
-Accounts, passwords, TOTP secrets, browser profiles and encrypted IMAP credentials are stored in the app's local data folder on your computer with restricted permissions. The app talks only to Google, the SMS provider and Ticketbox through the browsers it launches, and to this page to check for updates. Nothing is uploaded here.
+Accounts, passwords, TOTP secrets, browser profiles and encrypted IMAP credentials are stored in the app's local data folder on your computer with restricted permissions. The app talks only to Google and the SMS provider through the browsers it launches, and to this page to check for updates. Nothing is uploaded here.
 
 ## Troubleshooting
 
@@ -61,4 +60,3 @@ Accounts, passwords, TOTP secrets, browser profiles and encrypted IMAP credentia
 | Installer says the app cannot be closed | End `Gmail Account Manager.exe` in Task Manager, click Retry. |
 | Open / Auto login does nothing with A's Browser | Its licence check goes through the account's proxy. Fix or clear a dead proxy. |
 | Rented number never gets a code | The number is dead on the provider side. Cancel once the early-cancel window has passed and rent another. |
-| Ticketbox login says the session is not live | Open the account and sign in first; the Ticketbox step never re-logs into Google on purpose. |
